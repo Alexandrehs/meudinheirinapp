@@ -1,4 +1,3 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:meudinheirinapp/src/models/movimentacoes.dart';
 import 'package:meudinheirinapp/src/models/saldo.dart';
@@ -30,27 +29,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-      future: Firebase.initializeApp(),
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.done) {
-          return MaterialApp(
-            debugShowCheckedModeBanner: false,
-            title: 'Meu Dinheirin App',
-            theme: ThemeData.light(),
-            routes: {
-              '/dashboard': (context) => Dashboard(),
-              '/selectOperation': (context) => SelectOperation(),
-              '/addCredit': (context) => AddCredit(),
-              '/removeCredit': (context) => RemoveCredit(),
-            },
-            initialRoute: '/dashboard',
-          );
-        }
-        return Container(
-          color: Colors.white,
-        );
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Meu Dinheirin App',
+      theme: ThemeData.light(),
+      routes: {
+        '/dashboard': (context) => Dashboard(),
+        '/selectOperation': (context) => SelectOperation(),
+        '/addCredit': (context) => AddCredit(),
+        '/removeCredit': (context) => RemoveCredit(),
       },
+      initialRoute: '/dashboard',
     );
   }
 }

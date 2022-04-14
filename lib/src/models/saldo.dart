@@ -9,8 +9,13 @@ class Saldo extends ChangeNotifier {
     notifyListeners();
   }
 
-  remove(double value) {
-    _total = _total - value;
-    notifyListeners();
+  bool remove(double value) {
+    if (value < _total) {
+      _total = _total - value;
+      notifyListeners();
+      return true;
+    }
+
+    return false;
   }
 }
