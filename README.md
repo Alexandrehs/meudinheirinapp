@@ -1,16 +1,26 @@
 # meudinheirinapp
 
-A new Flutter project.
+Projeto simples com um saldo onde pode acrescentar ou removelo, foi usado para auxilio de gerencia de estado o Provider.
+
+## Pré requesitos
+Você precisa ter instalado o Dart, Flutter e um SDK para emular o app. Mais informações de instalação em [Windows](https://docs.flutter.dev/get-started/install/windows) ou [Linux](https://docs.flutter.dev/get-started/install/linux).
 
 ## Getting Started
+- $git clone https://github.com/Alexandrehs/meudinheirinapp.git
+- $cd meudinheirinapp 
+- $flutter run
 
-This project is a starting point for a Flutter application.
+## Framework e Libs usadas
+[Flutter](https://flutter.dev/)
+[Provider](https://pub.dev/packages/provider)
+[INTL](https://pub.dev/packages/intl)
 
-A few resources to get you started if this is your first Flutter project:
+### Features
+- [x] Adiciona Saldo
+- [x] Remove Saldo
+- [x] Verifica Saldo suficiente
+- [x] Avisa Saldo insuficiente
+- [x] Gerencia Estado
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Amostra do funcionamento
+<img src="https://user-images.githubusercontent.com/6656966/163390184-b17fdd91-6d87-431d-b78f-d3ed72b7d3ad.gif" width="350" height="700">
