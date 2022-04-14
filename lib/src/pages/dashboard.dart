@@ -95,8 +95,7 @@ class Dashboard extends StatelessWidget {
                   return Padding(
                     padding: const EdgeInsets.only(left: 10, right: 10),
                     child: ListView.builder(
-                      reverse:
-                          value.listMovimentacoes.length > 5 ? true : false,
+                      reverse: true,
                       shrinkWrap: true,
                       itemCount: value.listMovimentacoes.length,
                       itemBuilder: ((context, index) {
